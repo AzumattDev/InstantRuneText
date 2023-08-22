@@ -12,7 +12,7 @@ namespace InstantRuneText
     public class InstantRuneTextPlugin : BaseUnityPlugin
     {
         internal const string ModName = "InstantRuneText";
-        internal const string ModVersion = "1.0.0";
+        internal const string ModVersion = "1.0.1";
         internal const string Author = "Azumatt";
         private const string ModGUID = Author + "." + ModName;
         private readonly Harmony _harmony = new(ModGUID);
@@ -27,7 +27,7 @@ namespace InstantRuneText
     [HarmonyPatch(typeof(TextViewer), nameof(TextViewer.ShowText))]
     static class TextViewerShowTextPatch
     {
-        static void Prefix(TextViewer __instance, TextViewer.Style style, string topic, string text, bool autoHide)
+        static void Prefix(TextViewer __instance, TextViewer.Style style, string topic, string textId, bool autoHide)
         {
             if (style != TextViewer.Style.Rune) return;
             if (Player.m_localPlayer == null) return;
