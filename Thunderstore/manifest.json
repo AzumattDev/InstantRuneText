@@ -1,9 +1,9 @@
 {
   "name": "InstantRuneText",
-  "version_number": "1.0.1",
+  "version_number": "1.0.2",
   "website_url": "https://discord.gg/pdHgy6Bsng",
   "description": "Instantly displays the rune text instead of waiting for the \"translation\" to finish.",
   "dependencies": [
-    "denikson-BepInExPack_Valheim-5.4.2105"
+    "denikson-BepInExPack_Valheim-5.4.2200"
   ]
 }
