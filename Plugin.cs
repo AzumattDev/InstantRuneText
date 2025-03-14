@@ -12,7 +12,7 @@ namespace InstantRuneText
     public class InstantRuneTextPlugin : BaseUnityPlugin
     {
         internal const string ModName = "InstantRuneText";
-        internal const string ModVersion = "1.0.4";
+        internal const string ModVersion = "1.0.5";
         internal const string Author = "Azumatt";
         private const string ModGUID = Author + "." + ModName;
         private readonly Harmony _harmony = new(ModGUID);
